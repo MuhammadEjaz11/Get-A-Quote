@@ -6,7 +6,7 @@ let loader = document.getElementById('loader');
 
 function majorF(){
     loaderf();
-    setTimeout(getQuote, 2000);
+    setTimeout(getQuote, 1000);
     setTimeout(loaderf1, 2000);
 }
 

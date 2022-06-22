@@ -8,7 +8,7 @@ body {
     background-image: url(./img/pexels-mikechie-esparagoza-1742370.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     
     
 }
