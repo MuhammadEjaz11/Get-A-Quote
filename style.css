@@ -9,6 +9,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+    
 }
 
 .backimg{
@@ -28,11 +30,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgba(243, 243, 243, 0.2);
     width: 80%;
-    height: fit-content;
+    height: 250px;
+    overflow: scroll;
     border-radius: 10px;
     box-shadow: 0px 10px 40px rgb(141, 141, 141,0.3);
+}
+.quote::-webkit-scrollbar {
+    display: none;
 }
 p{
     font-size: 3em;
@@ -53,6 +60,8 @@ border-radius: 5px;
 color: rgb(255, 255, 255);
 font-weight: bolder;
 transition: 0.6s ease; 
+position: fixed;
+top: 300px;
 }
 #btn:hover{
     cursor: pointer;
@@ -68,6 +77,37 @@ transition: 0.6s ease;
     display: flex;
     justify-content: center;
 }
+.loader{
+    position:absolute;
+    left: 630px;
+    top: 100px;
+    width: 100px;
+    display: none;
+    /* border: 10px solid white; */
+}
+.loader4 {
+    width:45px;
+    height:45px;
+    display:inline-block;
+    padding:0px;
+    border-radius:100%;
+    border:5px solid;
+    border-top-color:rgba(246, 36, 89, 1);
+    border-bottom-color:rgba(255,255,255, 0.3);
+    border-left-color:rgba(246, 36, 89, 1);
+    border-right-color:rgba(255,255,255, 0.3);
+    -webkit-animation: loader4 1s ease-in-out infinite;
+    animation: loader4 1s ease-in-out infinite;
+ }
+ @keyframes loader4 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+ }
+ @-webkit-keyframes loader4 {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+ }
+
 @media screen and (max-width: 425px){
     p{
         font-size: 1em;
@@ -78,4 +118,52 @@ transition: 0.6s ease;
     #btn{
         font-size: 0.5em;
         }
+    .loader{
+        position:absolute;
+        left: 184px;
+        top: 150px;
+        width: 100px;
+        display: none;
+        /* border: 10px solid white; */
+    }
+}
+@media screen and (max-width: 320px){
+    .loader{
+        position:absolute;
+        left: 1000px;
+        top: 125px;
+        width: 100px;
+        display: none;
+        /* border: 10px solid white; */
+    }
+}
+@media screen and (max-width: 375px){
+    .loader{
+        position:absolute;
+        left: 160px;
+        top: 150px;
+        width: 100px;
+        display: none;
+        /* border: 10px solid white; */
+    }
+}
+@media screen and (max-width: 768px){
+    .loader{
+        position:absolute;
+        left: 350px;
+        top: 150px;
+        width: 100px;
+        display: none;
+        /* border: 10px solid white; */
+    }
+}
+@media screen and (max-width: 1024px){
+    .loader{
+        position:absolute;
+        left: 500px;
+        top: 150px;
+        width: 100px;
+        display: none;
+        /* border: 10px solid white; */
+    }
 }
