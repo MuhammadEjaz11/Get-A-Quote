@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-image: url(./img/pexels-mikechie-esparagoza-1742370.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.backimg{
+    position: relative;
+    margin: auto;
+    height: 625px;
+    width: 100%;
+    overflow: hidden;   
+    display: flex;
+    flex-direction: column;
+    
+    /* border: 1px solid black; */
+}
+.quote{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.2);
+    width: 80%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgb(141, 141, 141,0.3);
+}
+p{
+    font-size: 3em;
+    color: white;
+    padding: 1em;
+}
+span{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+#btn{
+font-size: 1em;
+padding: 1em;
+background-color: transparent;
+border: 1px solid rgb(255, 255, 255);
+border-radius: 5px;
+color: rgb(255, 255, 255);
+font-weight: bolder;
+transition: 0.6s ease; 
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid black;
+    
+}
+.btn{
+    width: 80%;
+    margin: 0px auto;
+    /* border: 10px solid white; */
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 425px){
+    p{
+        font-size: 1em;
+    }
+    span{
+        font-size: 1em;
+    }
+    #btn{
+        font-size: 0.5em;
+        }
+}
