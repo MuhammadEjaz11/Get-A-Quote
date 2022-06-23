@@ -12,7 +12,7 @@ function majorF(){
 
 
 function loaderf(){
-    loader.style.display = "block";
+    loader.style.display = "flex";
     document.getElementById('check').style.display = "none";
 }
 function loaderf1(){

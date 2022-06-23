@@ -45,7 +45,7 @@ body {
 p{
     font-size: 3em;
     color: white;
-    padding: 1em;
+    padding: 0.2em;
 }
 span{
     color: white;
@@ -79,16 +79,22 @@ top: 300px;
     justify-content: center;
 }
 .loader{
-    position:absolute;
-    left: 630px;
-    top: 100px;
-    width: 100px;
+    width: 100%;
+    margin: 100px 0px;
     display: none;
-    /* border: 10px solid white; */
+    justify-content: center;
+    position: absolute;
+    
+    /* position:absolute;
+    left: 630px;
+    top: 150px;
+    width: 100px;
+    display: block; */
+    /* border: 1px solid white; */
 }
 .loader4 {
-    width:45px;
-    height:45px;
+    width:50px;
+    height:50px;
     display:inline-block;
     padding:0px;
     border-radius:100%;
@@ -119,52 +125,52 @@ top: 300px;
     #btn{
         font-size: 1em;
         }
-    .loader{
+    /* .loader{
         position:absolute;
         left: 184px;
         top: 150px;
         width: 100px;
-        display: none;
-        /* border: 10px solid white; */
-    }
+        display: block;
+        border: 10px solid white;
+    } */
 }
-@media screen and (max-width: 320px){
+/* @media screen and (max-width: 320px){
     .loader{
         position:absolute;
-        left: 1000px;
+        left: 100px;
         top: 125px;
         width: 100px;
-        display: none;
-        /* border: 10px solid white; */
+        display: block;
+        border: 10px solid white;
     }
-}
-@media screen and (max-width: 375px){
+} */
+/* @media screen and (max-width: 375px){
     .loader{
         position:absolute;
         left: 160px;
         top: 150px;
         width: 100px;
-        display: none;
-        /* border: 10px solid white; */
+        display: block;
+        border: 10px solid white;
     }
-}
-@media screen and (max-width: 768px){
+} */
+/* @media screen and (max-width: 768px){
     .loader{
         position:absolute;
-        left: 350px;
+        left: 0px;
         top: 150px;
         width: 100px;
-        display: none;
-        /* border: 10px solid white; */
+        display: block;
+        border: 10px solid white;
     }
-}
-@media screen and (max-width: 1024px){
+} */
+/* @media screen and (max-width: 1024px){
     .loader{
         position:absolute;
         left: 500px;
         top: 150px;
         width: 100px;
-        display: none;
-        /* border: 10px solid white; */
+        display: block;
+        border: 10px solid white;
     }
-}
+} */
