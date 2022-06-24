@@ -6,8 +6,8 @@ let loader = document.getElementById('loader');
 
 function majorF(){
     loaderf();
-    setTimeout(getQuote, 1000);
-    setTimeout(loaderf1, 2000);
+    getQuote();
+    
 }
 
 
@@ -17,7 +17,7 @@ function loaderf(){
 }
 function loaderf1(){
     loader.style.display = "none";
-    document.getElementById('check').style.display = "block";
+    document.getElementById('check').style.display = "flex";
 }
 function getQuote(){
    let newp =  fetch('https://dummyjson.com/quotes/random')
@@ -27,6 +27,7 @@ function getQuote(){
         let authortxt = json.author;
         quote.innerHTML = `"${quotetxt}"`;
         author.innerHTML = `"${authortxt}"`;
-    });
+    })
+    .finally(loaderf1);
 }
 
