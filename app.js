@@ -4,12 +4,16 @@ let qbtn = document.getElementById('btn');
 qbtn.addEventListener('click', majorF);
 let loader = document.getElementById('loader');
 
+
 function majorF(){
+    btnDisabled();
     loaderf();
     getQuote();
-    
 }
-
+function btnDisabled(){
+    qbtn.disabled = true;
+    console.log("asd");
+}
 
 function loaderf(){
     loader.style.display = "flex";
@@ -28,6 +32,7 @@ function getQuote(){
         quote.innerHTML = `"${quotetxt}"`;
         author.innerHTML = `"${authortxt}"`;
     })
+    .then(()=>{qbtn.disabled = false;})
     .finally(loaderf1);
 }
 
